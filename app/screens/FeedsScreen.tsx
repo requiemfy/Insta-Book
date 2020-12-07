@@ -18,7 +18,7 @@ export default function FeedsScreen({ navigation, route }: any) {
         data={feeds}
         renderItem={({ item }) => {
           return (
-            <View style={{
+            <View style={{ // @remind clean here
               alignItems: "center",
               margin: 10,
               borderTopWidth: 1,
