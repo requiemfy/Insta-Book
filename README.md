@@ -1,3 +1,3 @@
 # Insta-Book
 
-Please file an issue if found bugs
+Please file issue if found bugs
