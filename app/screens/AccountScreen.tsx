@@ -1,4 +1,3 @@
-import { useBackHandler } from '@react-native-community/hooks';
 import * as React from 'react';
 import { Button, Image, StyleSheet } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
@@ -10,7 +9,7 @@ export default function AccountScreen({ navigation, route }: any) {
     <View style={styles.rootContainer}>
       <Image 
         source={require('./assets/profile.jpg')} 
-        style={styles.image}/>
+        style={styles.image} />
       <View style={styles.infoContainer}>
         <View style={{ flex: 0.5, backgroundColor: "transparent" }}>
           <FlatList
@@ -18,12 +17,11 @@ export default function AccountScreen({ navigation, route }: any) {
               {key: 'Name'},
               {key: 'Username'},
               {key: 'Website'},
-              {key: 'Bio'},
-            ]}
+              {key: 'Bio'}, ]}
             renderItem={({item}) => 
               <Text style={styles.data}>
                 {item.key}
-              </Text>} />
+              </Text> } />
         </View>
         <View style={{ flex: 1, backgroundColor: "transparent" }}>
           <FlatList
@@ -31,12 +29,11 @@ export default function AccountScreen({ navigation, route }: any) {
               {key: 'Jason Ramirez'},
               {key: 'jason.ramirez'},
               {key: 'https://jasonramirez.io'},
-              {key: 'Loading...'},
-            ]}
+              {key: 'Loading...'}, ]}
             renderItem={({item}) => 
               <Text style={styles.data}>
                 {item.key}
-              </Text>} />
+              </Text> } />
         </View>
       </View>
       <View 
@@ -44,8 +41,7 @@ export default function AccountScreen({ navigation, route }: any) {
         <Button
           onPress={() => navigation.reset({
             index: 0,
-            routes: [{ name: 'Login' }]
-          })}
+            routes: [{ name: 'Login' }] })}
           title="Log Out"
           color="#ca444a" />
       </View> 

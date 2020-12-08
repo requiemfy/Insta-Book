@@ -2,11 +2,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { FeedsParamList } from '../../types';
 import FeedsScreen from '../../screens/FeedsScreen';
-import { useBackButton } from '@react-navigation/native';
-import { useBackHandler } from '@react-native-community/hooks';
 import { Image, View } from 'react-native';
 
-// Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
 const FeedsStack = createStackNavigator<FeedsParamList>();
 export default function FeedsNavigator({ navigation }:any) {
@@ -24,7 +21,6 @@ export default function FeedsNavigator({ navigation }:any) {
             alignItems: "center", 
             justifyContent: "center", 
             backgroundColor: "#ffffff" 
-            // backgroundColor: "red" // @remind remove
           },
           headerLeft: () => null,
         }}

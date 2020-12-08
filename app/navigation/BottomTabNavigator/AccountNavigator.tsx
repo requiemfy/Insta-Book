@@ -13,8 +13,7 @@ export default function AccountNavigator() {
         options={{ 
           headerTitle: 'Tab Two Title' ,
           headerShown: false,
-        }}
-      />
+        }} />
     </TabTwoStack.Navigator>
   );
 }
