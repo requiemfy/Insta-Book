@@ -45,7 +45,7 @@ class LoginScreen extends React.PureComponent<NavigationInjectedProps & Props, S
       this.setState({ invalidCreds: false });
       this.navigation.reset({ 
         index: 0,
-        routes: [{ name: 'BottomTab' }] // initial route Feeds
+        routes: [{ name: 'BottomTab' }],
       });
     } 
     else this.setState({ invalidCreds: true });
