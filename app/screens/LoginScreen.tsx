@@ -14,6 +14,7 @@ import { CommonActions } from '@react-navigation/native';
 interface Props { navigation: NavigationScreenProp<NavigationState, NavigationParams> & typeof CommonActions; }
 interface State { invalidCreds: boolean; }
 
+// test push changing acc
 class LoginScreen extends React.PureComponent<NavigationInjectedProps & Props, State> {
   email: string;
   password: string;
