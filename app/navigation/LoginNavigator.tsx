@@ -8,19 +8,21 @@ const LoginStack = createStackNavigator<LoginParamList>();
 
 export default function LoginNavigator() {
   return (
-    <LoginStack.Navigator>
+    <LoginStack.Navigator headerMode={"none"}>
       <LoginStack.Screen 
         name="LoginScreen" 
         component={LoginScreen}
-        options={{
-          headerShown: false,
-        }}/>
+        // options={{
+        //   headerShown: false,
+        // }}
+        />
       <LoginStack.Screen 
         name="BottomTab" // feeds initial route
         component={BottomTabNavigator}
-        options={{
-          headerShown: false,
-        }}/>
+        // options={{
+        //   headerShown: false,
+        // }}
+        />
     </LoginStack.Navigator>
   );
 }
